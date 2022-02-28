@@ -48,7 +48,6 @@ switch (keputusan) {
     var persen = confirm("Mau tau hasil dari bagi kamu jika di ubah ke bentuk pesen(%)?")
         if (persen == true) {
           var persenBag = hasilBagi * 1 / 100
-          //var bulatPers = Math.round() + hasilBagi
           alert("Hasil bagi kamu jika di jadikan persen maka akan menjadi " + persenBag + "%")
         }else if(persen == false){
           alert("Oke, jika mau mengulang tinggal refresh halaman ini")
