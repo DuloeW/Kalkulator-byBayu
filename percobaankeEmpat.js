@@ -47,7 +47,8 @@ switch (keputusan) {
     alert("Nilai bagi pertama kamu " + bagi1 + " dan nilai bagi kedua kamu " + bagi2 + " maka hasil bagi kamu adalah " + hasilBagi + "\n (" + bagi1 + " : " + bagi2 + " = " + hasilBagi +")");
     var persen = confirm("Mau tau hasil dari bagi kamu jika di ubah ke bentuk pesen(%)?")
         if (persen == true) {
-          var persenBag = hasilBagi * 1 / 100
+          var persenBag = Math.round(hasilBagi * 1 / 100)
+          //var bulatPers = Math.round() + hasilBagi
           alert("Hasil bagi kamu jika di jadikan persen maka akan menjadi " + persenBag + "%")
         }else if(persen == false){
           alert("Oke, jika mau mengulang tinggal refresh halaman ini")
@@ -118,8 +119,8 @@ switch (keputusan) {
                   }
                 break;
               case '4':
-                 var solKurang5 = Math.round(Math.random() * 10000);
-                var solKurang6 = Math.round(Math.random() * 1000);
+                 var solKurang5 = Math.round(Math.random() * 100000 * 5);
+                var solKurang6 = Math.round(Math.random() * 10000);
                 var hasSoal  = solKurang5 - solKurang6;
                 var gabuSoal    = parseInt(prompt(solKurang5 + " - " + solKurang6+ " = ?"))
                   if (gabuSoal == hasSoal) {
