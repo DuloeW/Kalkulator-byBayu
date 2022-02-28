@@ -47,7 +47,7 @@ switch (keputusan) {
     alert("Nilai bagi pertama kamu " + bagi1 + " dan nilai bagi kedua kamu " + bagi2 + " maka hasil bagi kamu adalah " + hasilBagi + "\n (" + bagi1 + " : " + bagi2 + " = " + hasilBagi +")");
     var persen = confirm("Mau tau hasil dari bagi kamu jika di ubah ke bentuk pesen(%)?")
         if (persen == true) {
-          var persenBag = Math.round(hasilBagi * 1 / 100)
+          var persenBag = hasilBagi * 1 / 100
           //var bulatPers = Math.round() + hasilBagi
           alert("Hasil bagi kamu jika di jadikan persen maka akan menjadi " + persenBag + "%")
         }else if(persen == false){
