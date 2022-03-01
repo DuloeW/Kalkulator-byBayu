@@ -13,36 +13,55 @@
         align-items: center;
         height: 100vh;
         max-width: 100%;
+        flex-direction: column;
       }
-      div{
+      .home{
         display: flex;
+        margin: 0 auto;
         justify-content: center;
         width: 100%;
         flex-direction: column;
         align-items: center;
+        text-align: center;
       }
-      div button{
+      .home button{
         border-radius: 5px;
-        margin-top: 20px;
+        margin-top: 40px;
         outline: none;
         border: none;
         background: linear-gradient(#2efbb9, #00ccff);
         box-shadow: 0px 5px 30px #00ccff,
         0px -5px 30px #2efbb9;
-        font-size: 10px;
+        font-size: 13px;
         transition: .2s linear;
       }
-      div button:hover{
+      .home button:hover{
         transform: scale(.8);
+      }
+      .penilaian{
+        display: flex;
+        align-self: flex-end;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(150px);
+        border-bottom: 1px solid #fff;
+      }
+      .penilaian #bintang{
+        font-size: 9px;
       }
     </style>
   </head>
   <body>
-    <div>
+    <div class="home">
       <p id="text"></p>
       <p id="emot"></p>
       <p id="copy-right"></p>
       <button type="submit" onclick="window.location.reload()">Ulang!</button>
+    </div>
+    <div class="penilaian">
+      <p id="bintang"></p>
     </div>
     <script src="percobaankeEmpat.js" type="text/javascript" charset="utf-8"></script>
   </body>
