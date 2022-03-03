@@ -45,20 +45,53 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        transform: translateY(150px);
+        transform: translateY(140px);
         border-bottom: 1px solid #fff;
       }
       .penilaian #bintang{
         font-size: 9px;
       }
+      .botPenilai{
+        top: 50px;
+        position: absolute;
+        display: flex;
+        height: 90px;
+        width: 200px;
+        background: #eaeaea;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: inset 7px 8px 10px 3px #959595,
+        inset -7px -8px 10px 3px #ffffff;
+        /*-10px -10px 10px 3px #6c6c6c;*/
+      }
+      .botPenilai h1{
+        font-size: 12px;
+      }
+      .botPenilai h3{
+        margin-top: 10px;
+      }
+      .botPenilai h1, h3{
+        margin: 0;
+        color: #363333;
+      }
     </style>
   </head>
-  <body>
+  <body id="body">
     <div class="home">
       <p id="text"></p>
       <p id="emot"></p>
       <p id="copy-right"></p>
-      <button type="submit" onclick="window.location.reload()">Ulang!</button>
+      <button type="submit" onclick="window.location.reload()" id="button">Ulang!</button>
+    </div>
+    <div class="botPenilai" id="botPenilai">
+      <h1 id="pemilihan"></h1>
+      <h3 id="skor"></h3>
+      <div class="">
+        <a href="#"><ion-icon name="whatsapp"></ion-icon></a>
+      </div>
     </div>
     <div class="penilaian">
       <p id="bintang"></p>
